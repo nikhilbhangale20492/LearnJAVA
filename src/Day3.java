@@ -121,5 +121,49 @@ public class Day3 {
         /**
          * nested loops
          */
+        //use for, while and do while loop to print numbers from 10-100
+        int a;
+        for (a = 10; a <= 100; a++) {
+            System.out.println(a);
+        }
+        System.out.println("outside loop n value " + a);
+
+        int whilea = 10;
+        while (whilea <= 100) {
+            System.out.println(whilea);
+            whilea++;
+        }
+        System.out.println("outside loop whilea value: " + whilea);
+
+        int vara = 10;
+        do {
+            System.out.println(vara);
+            vara++;
+        } while (vara <= 100);
+
+
+        //print all the numbers that are divisible by 5 between 1-100 ?
+
+        for (int ia = 1; ia <= 100; ia++) {
+            if (ia % 5 == 0) {
+                System.out.println(ia+ " is divisible by 5");
+            } else {
+                System.out.println(ia+ " is not divisible by 5");
+            }
+        }
+
+        //print all the numbers that are divisible by 9 and are even between 1-100 ?
+
+        for (int ia = 1; ia <= 100; ia++) {
+            if (ia % 9 == 0 && ia % 2 == 0) {
+                System.out.println(ia+ " is divisible by 9 and are even");
+            }
+        }
+
+        for (int ia = 1; ia <= 100; ia++) {
+            if (ia % 9 == 0 || ia % 2 == 0) {
+                System.out.println(ia+ " is divisible by 9 or are even");
+            }
+        }
     }
 }

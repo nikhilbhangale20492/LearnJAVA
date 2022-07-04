@@ -120,5 +120,41 @@ public class Day2 {
          * loops
          * for, while, do while
          */
+
+
+        //Take 2 numbers, see if the result of num1-num2 is greater than 0
+        int numC = 101;
+        int numD = 105;
+        int resultA = numD - numC;
+
+        if (resultA > 0){
+            System.out.println(resultA+ " is greater than 0" );
+        } else {
+            System.out.println(resultA+ " is less than 0" );
+        }
+
+
+        //Take 2 numbers, find out which one is greater
+        int numA = 20, numB = 30;
+        if (numA > numB) {
+            System.out.println(numA + " is greater than " + numB);
+        } else {
+            System.out.println(numA + " is smaller than " + numB);
+        }
+
+
+        //Take 2 numbers, multiply them and see if that result is even or odd
+        int numa = 50;
+        int numb = 20;
+        int result = numa * numb;
+        int reminderA = result % 2;
+
+        if (reminderA == 0) {
+            System.out.println(result + " is a even number ");
+        } else {
+            System.out.println(result + " is a odd number ");
+        }
+
+
     }
 }
