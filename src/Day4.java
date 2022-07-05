@@ -56,7 +56,7 @@ public class Day4 {
                 largestNumber = lastDigit;
             }
         }
-        System.out.println("Largest Number: " + largestNumber);
+        System.out.println("Largest Number is: " + largestNumber);
 
 
         /**
@@ -137,9 +137,55 @@ public class Day4 {
          */
 
         /**
-         * nested forloops, pattern
+         * nested for loops, pattern
          * Arrays
          */
+
+        //In a given number, find the smallest single digit number
+        // int numbera = 32452341; //smallest number = 1
+
+        int numbera = 124508765;
+        int smallestnumber = 10;
+
+        System.out.println("numbera = " + numbera);
+        while (numbera > 0) {
+            int lastDigit = numbera % 10;
+            System.out.println("lastDigit = " + lastDigit);
+            numbera = numbera / 10;
+            System.out.println("numbera = " + numbera);
+            if (lastDigit < smallestnumber) {  //1 < 5
+                smallestnumber = lastDigit;
+            }
+        }
+        System.out.println("smallest Number is: " + smallestnumber);
+
+
+         // For a given number, find the largest divisor
+        // int number = 100; //result = 50
+
+//*8 % 1 = 0
+//8 % 2 = 0
+        //8 % 3 = 2
+        //8 % 4 = 0
+        //8 % 5 = 3
+        //8 % 6 = 2
+        //8 % 7 = 1
+
+        int numberb = 100;
+        int answer = 0;
+        for (int i = 1; i < numberb; i++) {
+        //for (int i = 1; i <= numberb-1; i++) {
+            // System.out.println("numberb = " + numberb);
+            if (numberb % i == 0) {
+                answer = i;
+            }
+            // System.out.println("answer = " + answer);
+        }
+        System.out.println("answer = " + answer);
+
+
+
+
 
 
     }
