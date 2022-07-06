@@ -147,7 +147,7 @@ public class Day4 {
         int numbera = 124508765;
         int smallestnumber = 10;
 
-        System.out.println("numbera = " + numbera);
+        // System.out.println("numbera = " + numbera);
         while (numbera > 0) {
             int lastDigit = numbera % 10;
             System.out.println("lastDigit = " + lastDigit);
@@ -182,10 +182,6 @@ public class Day4 {
             // System.out.println("answer = " + answer);
         }
         System.out.println("answer = " + answer);
-
-
-
-
 
 
     }

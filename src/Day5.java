@@ -38,6 +38,9 @@ public class Day5 { //Starts with capital
         }
 
         System.out.println("-------------");
+
+        // find the sum of number in array ?
+
         for (int i = 0; i < marks.length; i++) {
             System.out.println("i = " + i);
             System.out.println("sum = " + sum);
@@ -48,9 +51,11 @@ public class Day5 { //Starts with capital
         System.out.println("-------------");
         System.out.println("sum = " + sum);
 
+        // Find the largest number in array ?
+
         int largestNumber = 0;
         for (int i = 0; i < marks.length; i++) {
-            if(largestNumber < marks[i]) {
+            if (largestNumber < marks[i]) {
                 largestNumber = marks[i];
             }
         }
@@ -65,5 +70,51 @@ public class Day5 { //Starts with capital
          * print the odd numbers in array
          */
 
+        // find the sum of numbers in array
+
+        for (int i = 0; i < marks.length; i++) {
+            sum = marks[i] + sum;
+        }
+        System.out.println("sum = " + sum);
+
+        // Find the largest number in array
+
+        for (int i = 0; i < marks.length; i++) {
+        }
+        System.out.println("largestNumber = " + largestNumber);
+
+
+        // Find smallest number in array
+
+        int smallestNumber = marks[0];
+        for (int i = 1; i < marks.length; i++) {
+            if (marks[i] < smallestNumber) {
+                smallestNumber = marks[i];
+            }
+        }
+        System.out.println("smallestNumber = " + smallestNumber);
+
+        // Print the even numbers in array
+
+        for (int i = 0; i < marks.length; i++) {
+            if (marks[i] % 2 == 0) {
+                System.out.println("even no in array is = " + marks[i]);
+            }
+        }
+// Print the odd numbers in array
+
+        for (int i = 0; i < marks.length; i++) {
+            if (marks[i] % 2 == 1) {
+                System.out.println("odd no in array is = " + marks[i]);
+            }
+        }
+
+        // average
+        int suma = 0;
+        for (int i = 0; i < marks.length; i++) {
+            suma = suma + marks[i];
+        }
+        System.out.println("average = " + suma / (float) marks.length);
     }
+
 }
