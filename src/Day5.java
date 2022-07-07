@@ -115,6 +115,9 @@ public class Day5 { //Starts with capital
             suma = suma + marks[i];
         }
         System.out.println("average = " + suma / (float) marks.length);
+
+
+
     }
 
 }

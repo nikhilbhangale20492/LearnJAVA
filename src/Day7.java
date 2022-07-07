@@ -1,3 +1,4 @@
+import javax.lang.model.SourceVersion;
 
 public class Day7 {
     public static void main(String[] args) {
@@ -25,6 +26,7 @@ public class Day7 {
 
         add2Numbers(49, 51);
         add2Numbers(32, 90);
+        add2Numbers(45, 55);
 
         int a1 = multiply2Numbers(6, 9);
         System.out.println("Multiply result " + a1);
@@ -96,4 +98,5 @@ public class Day7 {
 
 
 
-}
+    }
+
