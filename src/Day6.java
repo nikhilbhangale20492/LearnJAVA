@@ -30,7 +30,16 @@ public class Day6 {
         333
         4444
         55555
-         */
+        */
+
+        for (int line = 1; line <= 5; line++) {
+            for (int column = 1; column <= line; column++) {
+                System.out.print(line);
+            }
+            System.out.println();
+        }
+
+
         /*
         1
         12
@@ -38,6 +47,15 @@ public class Day6 {
         1234
         12345
          */
+        for (int line = 1; line <= 5; line++) {
+            for (int column = 1; column <= line; column++) {
+                System.out.print(column);
+            }
+            System.out.println();
+        }
+
+
+
         /*
         55555
         4444
@@ -45,6 +63,14 @@ public class Day6 {
         22
         1
          */
+        System.out.println("----------------");
+        for (int line = 5; line >= 1; line--) {
+            for (int column = 1; column <= line; column++) {
+                System.out.print(line);
+            }
+            System.out.println();
+        }
+
         /*
         54321
         4321
@@ -52,6 +78,14 @@ public class Day6 {
         21
         1
          */
+        System.out.println("----------------");
+        for (int line = 5; line >= 1; line--) {
+            for (int column = line; column >= 1; column--) {
+                System.out.print(column);
+            }
+            System.out.println();
+        }
+
         /*
             1
            22
@@ -59,10 +93,17 @@ public class Day6 {
          4444
         55555
          */
-
-
-
-
+        System.out.println("----------------------");
+        for (int line = 1; line <= 5; line++) { //1
+            for (int column = 1; column <= 5; column++) { //1
+                if (column <= 5 - line) { //4
+                    System.out.print(".");
+                } else {
+                    System.out.print(line);
+                }
+            }
+            System.out.println();
+        }
 
 
 
