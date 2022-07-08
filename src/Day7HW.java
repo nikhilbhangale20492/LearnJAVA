@@ -1,11 +1,8 @@
-import javax.lang.model.SourceVersion;
-
 public class Day7HW {
     public static void main(String[] args) {
 
-        Day7.printHello();
+        printHello();
 
-        // Write a function to print Hello World
         String firstName = "Hello";
         String LastName = "World";
         System.out.println(firstName + " " + LastName);
@@ -16,41 +13,62 @@ public class Day7HW {
         int sum = add2Numbers(120, 80);
         System.out.println("sum = " + sum);
 
-        Day7.printHello();
-        number1(30);
-        number2(10);
-        number3(80);
+
+        int a1 = largestNumbers(30, 60);
+        System.out.println("Largest Number out of them is " + a1);
+
+        printHello();
+//       a2 = SmallestNumbers(30, 60, 80);
+       // System.out.println("Smallest Number out of them is " + a2);
 
         System.out.println(sumOfLengthOfStrings("Hello", "India", "World"));
 
 
     }
 
-   // Write a function which takes 2 numbers and return the sum of them
-   public static int add2Numbers(int numa, int numb) {
-       int sum = numa + numb;
-       return sum;
-   }
+    // Write a function to print Hello World I am JAVA
 
-        // Write a function which takes 2 numbers and return the largest out of them
+    public static void printHello() {
+        System.out.println("Hello, World I am JAVA");
+    }
 
-    public static int largestNumber(int number1, int number2) {
-        int result = number1 > number2;
-        return result;
+    // Write a function which takes 2 numbers and return the sum of them
+    public static int add2Numbers(int numa, int numb) {
+        int sum = numa + numb;
+        return sum;
+    }
 
-        // Write a function which takes 3 numbers and return the smallest out of them
+    // Write a function which takes 2 numbers and return the largest out of them
 
-        public static int smallestNumber(int number1, int number, int number3) {
-            int result = numa > numb;
-            return result;
+    public static int largestNumbers(int number1, int number2) {
+        /*
+        n1 and n2
+        n1 < n2
+        return n2
+        else
+        return n1
+         */
+        if (number1 < number2) {
+            return number2;
+        } else {
+            return number1;
+        }
+    }
+    // Write a function which takes 3 numbers and return the smallest out of them
+// 5 7 8
+//    //public static int SmallestNumbers(int number1, int number2, int number3) {
+//
+//        return a2;
+//    }
 
-        // Write a function which takes 3 strings and return sum of length of the strings
+    // Write a function which takes 3 strings and return sum of length of the strings
 
-            public static int sumOfLengthOfStrings(String firstName, String middleName, String lastName) {
-                int firstNameLength = firstName.length();
-                int middleNameLength = middleName.length();
-                int lastNameLength = lastName.length();
-                int sum = firstNameLength + middleNameLength + lastNameLength;
-                return sum;
+    public static int sumOfLengthOfStrings(String firstName, String middleName, String lastName) {
+        int firstNameLength = firstName.length();
+        int middleNameLength = middleName.length();
+        int lastNameLength = lastName.length();
+        int sum = firstNameLength + middleNameLength + lastNameLength;
+        return sum;
+    }
 }
 
