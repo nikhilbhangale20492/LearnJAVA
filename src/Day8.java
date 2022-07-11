@@ -16,7 +16,7 @@ public class Day8 {
         if (statement.contains("JAVA")) {
             System.out.println("Statement contains JAVA");
         } else {
-            System.out.println("Statement doesnot contain JAVA");
+            System.out.println("Statement does not contain JAVA");
         }
 
         /**
@@ -30,11 +30,10 @@ public class Day8 {
         if (statement.toLowerCase().contains("jitendra")) { //chaining of commands
             System.out.println("Statement contains jitendra");
         } else {
-            System.out.println("Statement doesnot contain jitendra");
+            System.out.println("statement before converting to lowercase = " + statement);
+            statement = statement.toLowerCase();
+            System.out.println("statement after converting to lowercase = " + statement);
         }
-        System.out.println("statement before converting to lowercase = " + statement);
-        statement = statement.toLowerCase();
-        System.out.println("statement after converting to lowercase = " + statement);
 
         /**
          * Check if two string contents are equal
@@ -86,6 +85,36 @@ public class Day8 {
  * 4. Find the second index of "I"
  * 5. Find the length of statement3
  */
+
+
+        String statement3 = "Hey I am Arohi and 1 year old. I like playing games";
+
+        //1. Does that string have "games" ?
+        if (statement3.contains("games")) {
+            System.out.println("Statement does have games");
+        } else {
+            System.out.println("Statement does not have games");
+        }
+
+        // 2. Find the index of name "Arohi"
+
+        // A r o h i
+        // 0 1 2 3 4
+        System.out.println(statement3.indexOf("Arohi"));
+
+
+        // 3. Print the substring "Arohi"
+        System.out.println("-----substring----");
+        System.out.println(statement3.substring(9, 14));
+
+        // 4. Find the second index of "I".
+
+        System.out.println("Second Index of I: " + statement3.indexOf("I",5));
+
+
+        // 5. Find the length of statement3
+
+        System.out.println("Length: " + statement3.length());
 
 
     }

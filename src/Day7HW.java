@@ -18,8 +18,8 @@ public class Day7HW {
         System.out.println("Largest Number out of them is " + a1);
 
         printHello();
-//       a2 = SmallestNumbers(30, 60, 80);
-       // System.out.println("Smallest Number out of them is " + a2);
+       // a2 = SmallestNumbers(30, 60, 80);
+        //System.out.println("Smallest Number out of them is " + a2);
 
         System.out.println(sumOfLengthOfStrings("Hello", "India", "World"));
 
@@ -54,10 +54,11 @@ public class Day7HW {
             return number1;
         }
     }
-    // Write a function which takes 3 numbers and return the smallest out of them
-// 5 7 8
-//    //public static int SmallestNumbers(int number1, int number2, int number3) {
-//
+    // Write a function which takes 3 numbers and return the smallest out of them (nested if)
+// 30 60 80
+
+   // public static int SmallestNumbers(int number1, int number2, int number3) {
+
 //        return a2;
 //    }
 
