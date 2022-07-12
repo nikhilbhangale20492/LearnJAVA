@@ -65,6 +65,63 @@ public class Day9 {
      * Find number of consonants in the statement.
      */
 
+    // * Find number of times space is repeated in statement
+    public static int numberOfSpace(String statement) {
+        int counter = 0;
+        for (int i = 0; i < statement.length(); i++) {
+            if (statement.charAt(i) == ' ') {
+                counter++;
+
+            }
+        }
+        return counter;
+    }
+
+    // * Find number of consonants in the statement.
+    public static int findNoOfConsonants(String statement) {
+        int counter = 0;
+        statement = statement.toLowerCase();
+        for (int i = 0; i < statement.length(); i++) {
+            char a = statement.charAt(i);
+            if (a != 'a' && a != 'i' && a != 'o' && a != 'u' && a != 'e') {
+                counter++;
+            }
+
+        }
+        return counter;
+    }
+
+    public static void test() {
+        for (int i = 1; i <= 10; i++) {
+            if (i == 5) {
+                System.out.println("i = " + i);
+            }
+        }
+    }
+
+    public static void test1() {
+        for (int i = 1; i <= 10; i++) {
+            if (i != 5) {
+                System.out.println("i = " + i);
+            }
+        }
+    }
+
+    public static void test2() {
+        for (int i = 10; i >= 1; i--) {
+            if (i == 5 || i == 8) {
+                System.out.println("i = " + i);
+            }
+        }
+    }
+
+    public static void test3() {
+        for (int i = 10; i >= 1; i--) {
+            if (i != 5 && i != 8) {
+                System.out.println("i = " + i);
+            }
+        }
+    }
 
     public static void main(String[] args) {
         //find the length of below string
@@ -73,6 +130,8 @@ public class Day9 {
 
         System.out.println("i repeated " + findOccurances(s1, 'i') + " times");
         System.out.println("a repeated " + findOccurances(s1, 'a') + " times");
+        System.out.println("Space repeated " + numberOfSpace(s1) + " times");
+
 
         System.out.println("Index of T: " + s1.indexOf("T"));
 //        System.out.println(s1.charAt(0));
@@ -87,9 +146,15 @@ public class Day9 {
 //            }
 //        }
 //        System.out.println("Total no of times i repeated is " + counter);
+//        System.out.println("Total no of times space repeated is " + counter);
 
         System.out.println(findNoOfVowels(s1));
+        System.out.println("Consonant " + findNoOfConsonants(s1));
 
+        test();
+        test1();
+        test2();
+        test3();
     }
 
 
