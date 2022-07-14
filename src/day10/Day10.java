@@ -41,14 +41,13 @@ public class Day10 {
         System.out.println("numberUtils.addAllVariables() = " + numberUtils.addAllVariables());
 
 
-
         NumberUtils numberUtils1 = new NumberUtils();
 //        System.out.println("number utils 1 " + numberUtils1.multiply2Numbers(10,20));
 //        System.out.println("numberUtils1.varaible1 = " + numberUtils1.varaible1);
         System.out.println("numberUtils1.addAllVariables() = " + numberUtils1.addAllVariables());
         numberUtils1.varaible1 = 80;
         System.out.println("numberUtils1.addAllVariables() = " + numberUtils1.addAllVariables());
-        
+
         //Class variables
 
         //How to use one class into another
@@ -81,8 +80,58 @@ public class Day10 {
      */
 
 
+    /**
+     * 7
+     * 7 X 6 X 5 X 4 X 3 X 2 X 1
+     * <p>
+     * result X i = result
+     * 1    X 7 = 7     //first
+     * 7    X 6 = 42    //second
+     * 42   X 5 = 210   //third
+     * 210  X 4 = 840
+     * 840  X 3 = 2520
+     * 2520 X 2 = 5040
+     * 5040 X 1 = 5040
+     */
+
+    /**
+     * 5
+     * result X  i =     result
+     * 1    X   5 =     5
+     * 5    X   4 =     20
+     * 20   X   3 =     60
+     * 60   X   2 =     120
+     * 120  X   1 =     120
+     *
+     */
 
 
+    /**
+     * num = 5
+     * result X i   = result
+     * 1    X   1   =   1
+     * 1    X   2   =   2
+     * 2    X   3   =   6
+     * 6    X   4   =   24
+     * 24   X   5   =   120
+     */
+
+    public int test5(int num) {
+        int result = 1;
+        for (int i = 1; i <= num; i++) {
+            result = result * i;
+        }
+        return result;
+    }
+
+
+    int findFactorial(int num) {
+        int result = 1;
+        for (int i = num; i >= 1; i--) {
+            result = result * i;
+        }
+        return result;
+    }
 
 
 }

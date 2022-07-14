@@ -40,4 +40,12 @@ public class UtilsClass {
         return result;
     }
 
+    public int factorial() {
+        int result = 1;
+        for (int i = number; i >= 1; i--) {
+            result = result * i;
+        }
+        return result;
+    }
+
 }

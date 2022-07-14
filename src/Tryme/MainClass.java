@@ -15,6 +15,15 @@ public class MainClass {
 
       //  System.out.println("Factorial of 7 is = " + utilsClass.findFactorial(7));
 
+        System.out.println("Factorial is " + utilsClass.factorial());
+
+        utilsClass.number = 5;
+
+
+        System.out.println("Factorial is " + utilsClass.factorial());
+
+
+        UtilsClass adbc = new UtilsClass();
 
 
     }
@@ -31,7 +40,7 @@ public class MainClass {
  *      a. Add 2 numbers and return the result
  *      b. Find the largest number from given 2 numbers and return the result
  *      c. Create a class variable named number and assign to 7
- *      d. Find the factorial of a class variable number
+ *      d. Find the factorial of a class variable named number
  * 5. Create an object of UtilsClass in MainClass
  * 6. Call function to add 2 numbers and print
  * 7. Call function to find the largest number and print
@@ -39,3 +48,9 @@ public class MainClass {
  * 9. Update the number to 5
  * 10. Call function to find the factorial
  */
+
+/**
+ * Write a program to return sum of all even numbers from 1-100
+ * Eg: 2 + 4 + 6 + 8...... + 100
+ */
+
