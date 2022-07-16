@@ -1,4 +1,4 @@
-package Tryme;
+package tryme;
 
 public class MainClass {
 

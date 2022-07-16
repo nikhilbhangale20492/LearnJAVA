@@ -106,7 +106,7 @@ public class Day1 {
          */
         int NumberB; //Declaration
         //syntax
-        //variable name = value
+        //DataType variable name = value
         int num8 = 5;
         int num9 = 6;
         int num10 = 7;

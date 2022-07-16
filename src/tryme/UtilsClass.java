@@ -1,4 +1,4 @@
-package Tryme;
+package tryme;
 
 public class UtilsClass {
     /*
@@ -47,5 +47,33 @@ public class UtilsClass {
         }
         return result;
     }
+/**
+ * Write a program to return sum of all even numbers from 1-100
+ * Eg: 2 + 4 + 6 + 8...... + 100
+ */
+/*
+i   % 2 = 0 ---> even --->add--->result
+1   % 2 = 1 odd
+2   % 2 = 0 even 2
+3   % 2 = 1 odd
+4   % 2 = 0 even 2+4
+5   % 2 = 1 odd
+6   % 2 = 0 even 2+4+6
+7   % 2 = 1 odd
+8   % 2 = 0 even
+9   % 2 = 1 odd
+10  % 2 = 0 even
+ */
+
+//public int sumOfEvenNo() {
+    //for (int i = 1; i <= 100; i++) {
+        //int result = i;
+        //if (i % 2 == 0) {
+
+       // }
+        //return result;
+    //}
+
+//}
 
 }
