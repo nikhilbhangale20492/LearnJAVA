@@ -104,7 +104,7 @@ public class TestMyProgram {
 //        }
         return Integer.parseInt(reverseNumber);
     }
-    
+
     public static String reverseString(String sampleString) {
         String reverseString = "";
 
@@ -117,5 +117,23 @@ public class TestMyProgram {
 //        }
         return reverseString;
     }
+
+    //check if a number is palindrome
+    //121 -> 121 (palindrome)
+    //100 -> 1 (not palindrome)
+    //13431 -> 13431 (palindrome)
+
+    /**
+     * number
+     * reverse
+     *
+     * check
+     * if true then palindrome
+     * if false then not palindrome
+     */
+
+
+
+
 
 }
