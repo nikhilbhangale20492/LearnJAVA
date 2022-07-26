@@ -1,9 +1,11 @@
 public class MainClass {
     public static void main(String[] args) {
         Assignments assignments = new Assignments();
-//        for(int i=1; i<=500; i++) {
-//            assignments.printArmstrongNumberOrNot(i);
-//        }
+
+        System.out.println(assignments.reverseNumber(12345));
+        for(int i=1; i<=500; i++) {
+            assignments.printArmstrongNumberOrNot(i);
+        }
 
         int primeCounter = 0;
         for (int i = 2; i <= 200; i++) {
@@ -40,10 +42,10 @@ public class MainClass {
 
 
         //Print fibonacci series
-        assignments.printFibonacciSeries(10);
+      //  assignments.printFibonacciSeries(10);
         System.out.println();
         System.out.println();
-        assignments.printPattern(10);
+       // assignments.printPattern(10);
 
 
         System.out.println(1 + 1); //2
@@ -57,6 +59,15 @@ public class MainClass {
         System.out.println(""+1 + 1 + "");  //11
         System.out.println(1 + "" + 1); //1 + "" = "11"
         System.out.println("" + (1 + 1)); //"" + 2 = "2"
+
+
+        System.out.println(assignments.reverseNumber(12345));
+        System.out.println(assignments.equation3(10,5));
+        System.out.println(assignments.equation2(7));
+        System.out.println(assignments.equation1(3));
+        System.out.println(assignments.equation4(2));
+        System.out.println(assignments.equation5(2));
+
 
     }
 
