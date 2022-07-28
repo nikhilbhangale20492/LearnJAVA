@@ -39,7 +39,7 @@ public class Basic {
          * Print whether reminder of 378 when divided by 7 is even or odd
          */
 
-        
+
     }
 
 
