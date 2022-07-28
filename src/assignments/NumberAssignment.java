@@ -27,6 +27,16 @@ public class NumberAssignment {
 
 
     /**
+     * Write a function to calculate sum of first n natural numbers
+     * Eg: 10
+     * 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 = 55
+     *
+     * Eg: 7
+     * 1 + 2 + 3 + 4 + 5 + 6 + 7 = 28
+     */
+
+
+    /**
      * Write a function to print all the even single digit numbers out of given number
      * Eg: 87624
      * 8
@@ -67,6 +77,16 @@ public class NumberAssignment {
 
     /**
      * Write a function to reverse any given number and return the result
+     */
+
+
+    /**
+     * Write a function to calculate the factorial of given number
+     * Eg: 7
+     * 7*6*5*4*3*2*1 = 5040
+     *
+     * Eg: 5
+     * 5*4*3*2*1 = 120
      */
 
 
