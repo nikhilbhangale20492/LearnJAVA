@@ -33,12 +33,16 @@ public class TestMyProgram {
         System.out.println("+++++" + reverseNumber_2(763564871));
         System.out.println("+++++" + reverseNumber_2(768346371));
         System.out.println("+++++" + reverseString("reverseString"));
+        palindromeFunction(12126121);
+        palindromeString("nikkin");
+
+
     }
 
     public static int reverseNumber(int number) { //7
         int reverseNumber = 0;
 
-        while (number != 0) {
+        while (number != 0) {  // != not equal to
             int reminder = number % 10; //7
             reverseNumber = reverseNumber * 10 + reminder; //7867
             number = number / 10;       //7/10 = 0
@@ -55,10 +59,6 @@ public class TestMyProgram {
         //0 1 2 3 4
         //7 8 7 8 6
 
-
-        //
-
-        //i am nikhil
 
         String convertedNumber = "" + number; //string
         String reverseNumber = "";
@@ -89,6 +89,7 @@ public class TestMyProgram {
 
         //convert string to number
         return parseInt(reverseNumber);
+
 
     }
 
@@ -131,23 +132,50 @@ public class TestMyProgram {
      * if true then palindrome
      * if false then not palindrome
      */
-
-    public static void checkPalindrome(int number) {
+// 0 1 2
+// 1 2 1
+    public static void palindromeFunction(int number) {
         int reverseNo = 0;
+        int number1 = number;
+
         while (number != 0) {
-            int r1 = number % 10;
-            reverseNo = reverseNo * 10 + r1;
+            int reminder = number % 10;
+            reverseNo = reverseNo * 10 + reminder;
             number = number / 10;
         }
-
-        //check
-        if(reverseNo == number) {
-            System.out.println(number + " is a palindrome number");
+        if (reverseNo == number1) {
+            System.out.println(number1 + " is palindrome");
         } else {
+            System.out.println(number1 + " is not palindrome");
+        }
+    }
 
-            System.out.println(
-                    number + " is not a palindrome number"
-            );
+    /*
+    number = 0
+    reverseNo = 121
+    number1 = 121
+
+     */
+
+    public static int reverseString1(String number) {
+        String reverseString1 = "";
+
+        for (int i = number.length() - 1; i >= 0; i--) {
+            reverseString1 = reverseString1 + number.charAt(i);
+        }
+        return Integer.parseInt(reverseString1);
+    }
+
+    public static void palindromeString(String a1) {
+        String palindromeString = "";
+
+        for (int i = a1.length()-1; i>=0; i--) {
+            palindromeString = palindromeString + a1.charAt(i);
+        }
+        if (palindromeString.equalsIgnoreCase(a1)) {
+            System.out.println(a1 + " is palindrome");
+        } else {
+            System.out.println(a1 + " is not palindrome");
         }
     }
 
