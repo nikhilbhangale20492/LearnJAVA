@@ -126,14 +126,30 @@ public class TestMyProgram {
     /**
      * number
      * reverse
-     *
+     * <p>
      * check
      * if true then palindrome
      * if false then not palindrome
      */
 
+    public static void checkPalindrome(int number) {
+        int reverseNo = 0;
+        while (number != 0) {
+            int r1 = number % 10;
+            reverseNo = reverseNo * 10 + r1;
+            number = number / 10;
+        }
 
+        //check
+        if(reverseNo == number) {
+            System.out.println(number + " is a palindrome number");
+        } else {
 
+            System.out.println(
+                    number + " is not a palindrome number"
+            );
+        }
+    }
 
 
 }

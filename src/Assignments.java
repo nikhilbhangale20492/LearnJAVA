@@ -124,16 +124,28 @@ public class Assignments {
     /**
      * given number=3
      *
-     * 1 + x + x^2 + x^3 + x^4 + x^5
+     * 1 + x^1 + x^2 + x^3 + x^4 + x^5
      * 1 + 3 + 3^2 + 3^3 + 3^4 + 3^5
      * 1 + 3 + 3x3 + 3x3x3 + 3x3x3x3 + 3x3x3x3x3
      */
 
     //6. Solve the below equation
+
     /**
      * given number = 7
-     * 1 + X + 2X + 3X + 4X + 5X
+     * 1 + 1X + 2X + 3X + 4X + 5X.... + 100x
      * 1 + 7 + 2*7 + 3*7 + 4*7 + 5*7
      */
+
+    public int equation2(int number) {
+        int result = 0;
+
+        for (int i = 1; i <= 100; i++) {
+            result = result + i * number;
+        }
+
+        return result;
+    }
+
 
 }
