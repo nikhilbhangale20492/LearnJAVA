@@ -3,27 +3,54 @@ package assignments;
 public class NumberAssignment {
 
     public static void main(String[] args) {
+        System.out.println("largestNumber(20,28) = " + largestNumber(20,28));
+        System.out.println("smallestNumber(86, 45) = " + smallestNumber(86, 45));
+        System.out.println("add3Numbers(20, 40, 50) = " + add3Numbers(20, 40, 50));
+        System.out.println("subtract2Numbers(100, 20) = " + subtract2Numbers(100, 40));
+        System.out.println("naturalNumbers(10) = " + naturalNumbers(10));
+        System.out.println("naturalNumbers(7) = " + naturalNumbers(7));
+
+
+
 
     }
 
     /**
      * Write a function to return the largest number out of given 2 numbers
      */
+    public static int largestNumber(int num1, int num2) {
+        if (num1 >= num2){
+            return num1;
+        } else {
+            return num2;
+        }
+    }
 
 
     /**
      * Write a function to return the smallest number out of given 2 numbers
      */
-
-
+    public static int smallestNumber(int num1, int num2) {
+      if (num1 <= num2) {
+          return num1;
+      } else {
+          return num2;
+      }
+    }
     /**
      * Write a function to add 3 given numbers and return the result
      */
-
-
+    public static int add3Numbers(int num1, int num2, int num3) {
+        int result = num1 + num2 + num3;
+        return result;
+    }
     /**
      * Write a function to subract 2 given numbers and return the result
      */
+    public static int subtract2Numbers(int num1, int num2) {
+        int result = num1 - num2;
+        return result;
+    }
 
 
     /**
@@ -34,8 +61,14 @@ public class NumberAssignment {
      * Eg: 7
      * 1 + 2 + 3 + 4 + 5 + 6 + 7 = 28
      */
-
-
+    public static int naturalNumbers(int num1) {
+        int n = num1;
+        int result = 0;
+        for (int i=0; i<=n; i++) {
+            result = result + i;
+        }
+        return result;
+    }
     /**
      * Write a function to print all the even single digit numbers out of given number
      * Eg: 87624
@@ -44,6 +77,9 @@ public class NumberAssignment {
      * 2
      * 4
      */
+//    public static int evenSingleDigitNo(int num) {
+//
+//    }
 
 
     /**
@@ -51,6 +87,9 @@ public class NumberAssignment {
      * Eg: 87053
      * 8 + 7 + 0 + 5 + 3 = 23
      */
+//    public static int sumOfAllNumbers(int num) {
+//
+//    }
 
 
     /**

@@ -1,3 +1,4 @@
+import static java.lang.Integer.max;
 import static java.lang.Integer.parseInt;
 
 public class TestMyProgram {
@@ -35,6 +36,7 @@ public class TestMyProgram {
         System.out.println("+++++" + reverseString("reverseString"));
         palindromeFunction(12126121);
         palindromeString("nikkin");
+        anagramString("MORAL", "MOLAR");
 
 
     }
@@ -179,5 +181,55 @@ public class TestMyProgram {
         }
     }
 
+    /*
+    Anagram Strings
+    Moral - Molar
+    Listen - Silent
+               01234
+    String x = ABCD
+    String Y = CDAE
+    1st charter of x is A
+        compare with C          A==C
+        compare with D          A==D
+        Compare with A true     A==A
+    2nd character of x is B
+        c
+        D
+        A
+        B true
+    3rd char x is C
+        c true
+    4th char x is D
+        C
+        D true
+
+
+    bnahkjlfdbdbndjnsksn
+
+
+     */
+/*
+i = 0
+j = 2
+x = abcd
+y = dcba
+
+a == a
+
+
+ */
+    public static void anagramString(String x, String y) {
+        // String x = "MORAL";
+        // String y = "MOLAR";
+        boolean flag = true;
+        for ( int i=0; i<=x.length(); i++) {
+            for ( int j=0; j<=y.length(); j++) {
+                if (x.charAt(i) == y.charAt(j)) {
+
+                }
+            }
+
+        }
+    }
 
 }
